@@ -7,10 +7,10 @@ class Battleship(Starship):
     mod_name = ''
     mod_desc = ''
 
-    def __init__(self, faction, type, vuln, name, crew):
+    def __init__(self, faction, c_pit, vuln, name, crew):
         self.__craft = name
         self.__squad_size = crew
-        super(Battleship, self).__init__(faction, type, vuln)
+        super(Battleship, self).__init__(faction, c_pit, vuln)
 
     def get_craft(self):
         return self.__craft
@@ -30,12 +30,11 @@ class Battleship(Starship):
     def set_shield_strength(self, vuln):
         self.__shield_strength = vuln
 
-    def equip_mods(self):
-        print('Availible mods...\n#: NAME')
+    def equip_mods(self,upgrade):
+        print('Available mods...\n#: NAME')
         Equip().get_mods()
-        upgrade = int(input('\nEnter desired MOD number: '))
         self.mod_added = True
-        print('Mod Equiped...')
+        print('Mod Equipped...')
         self.mod_name = Equip().get_mod_name(upgrade)
         print('\t',self.mod_name)
         self.mod_desc = Equip().get_mod_description(upgrade)

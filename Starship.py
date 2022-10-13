@@ -1,7 +1,7 @@
 class Starship:
-    def __init__(self, faction, type, vuln):
+    def __init__(self, faction, c_pit, vuln):
         self.__commander = faction
-        self.__compatible = type
+        self.__compatible = c_pit
         self.__shield_strength = vuln
 
     def get_commander(self):
@@ -13,8 +13,8 @@ class Starship:
     def get_compatible(self):
         return self.__compatible
 
-    def set_compatible(self, type):
-        self.__compatible = type
+    def set_compatible(self, c_pit):
+        self.__compatible = c_pit
 
     def get_shield_strength(self):
         return self.__shield_strength
@@ -25,4 +25,4 @@ class Starship:
     def print(self):
         print('Officer Faction:', self.__commander)
         print('Ship Type:', self.__compatible)
-        print('Shield strength: '+ str(self.__shield_strength)+'%')
+        print('Shield strength: ' + str(self.__shield_strength) + '%')

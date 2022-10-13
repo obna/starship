@@ -14,9 +14,9 @@ I will post the three most creative programs (with your permission of course) an
 
 Create a super class named Starship. Create at least three private instance variables that would describe attributes of a Starship. Make one of these "Shield Strength" to hold the strength of the ship's protective shields (in percentage). Create appropriate methods to support the class, including the initialization method, getters, setters, and print.
 
-Create three sub classes that inherit from Starship: Battleship, Transport, and Medical. For each create at least two private instance variables that would describe attributes particular to that class of Starship. Create appropriate methods to support the class, including the initialization method, getters, setters, and print.
+Create three sub classes that inherit from Starship: Battleship, Transport, and Medical. For each *create at least two private instance variables* that would describe attributes particular to that class of Starship. Create appropriate methods to support the class, including the initialization method, getters, setters, and print.
 
-For each of the four classes, *create at least one new method*# that would serve some functional or awesome purpose for that Class. Add whatever extra private instance variables if you need them. Be creative.
+For each of the four classes, *create at least one new method* that would serve some functional or awesome purpose for that Class. Add whatever extra private instance variables if you need them. Be creative.
 
 Write a driver program to exercise your classes. Create plenty of objects; narrate your output as your program executes; and make it creative.
 
