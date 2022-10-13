@@ -41,16 +41,13 @@ print('-----------------------------------------------------')
 
 
 print('>>> Medical 1 Details <<<')
-xiphos = Medical('Corpus', 'Medical', '100', 'Camo', '3 pods')
+xiphos = Medical('Corpus', 'Medical', '100', '200 years Phobos time remains', '3 vessels activated in field', 'Left Arm, 43.8% complete')
 xiphos.print()
-'''
 print('\n>>> Medical 2 Details <<<')
-scimitar = Medical('Corpus', 'Medical', '100', 'Camo', '3 vessels')
+scimitar = Medical('Corpus', 'Medical', '100', '57 years Earth time remains', '1 vessels activated in ship','N/A')
 scimitar.print()
 print('\n>>> Medical 2 Generate <<<')
-scimitar.revive()
+scimitar.revive('personal')
 print('\n>>> Medical 2 Final <<<')
 scimitar.print()
 print('-----------------------------------------------------')
-
-'''
